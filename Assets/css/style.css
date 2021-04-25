@@ -1,0 +1,41 @@
+/* Tamaño de imagen de usuario*/
+.app-sidebar__user-avatar{
+    width: 48px;
+    background: gray;
+    padding: 1px;
+}
+
+/* Un solo tamaño a las imagenes de carousel e imagenes de las especialidades*/
+.card-img-top{
+    width: 100%;
+    height: 150px;    
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+}
+
+/* Organización de títulos, subtítulos y párrafos */
+.titulo {
+    text-align: center;
+    color: #36b7f3;
+}
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: justify;
+}
+
+/* Colores para los modales */
+.headerRegister{
+    background: #009688;
+    color: #FFF;
+}
+
+.headerUpdate {
+    background: #007bff;
+    color: #FFF;
+}
