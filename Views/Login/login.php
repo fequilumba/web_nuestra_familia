@@ -13,58 +13,44 @@
     <title><?= $data['page_tag']; ?></title>
   </head>
   <body>
-    <section class="material-half-bg">
-      <div class="cover"></div>
-    </section>
-    <section class="login-content">
-      <div class="logo">
-        <h1>Vali</h1>
-      </div>
-      <div class="login-box">
-        <form class="login-form" action="index.html">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
-          <div class="form-group">
-            <label class="control-label">USERNAME</label>
-            <input class="form-control" type="text" placeholder="Email" autofocus>
-          </div>
-          <div class="form-group">
-            <label class="control-label">PASSWORD</label>
-            <input class="form-control" type="password" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <div class="utility">
-              <div class="animated-checkbox">
-                <label>
-                  <input type="checkbox"><span class="label-text">Stay Signed in</span>
-                </label>
-              </div>
-              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Forgot Password ?</a></p>
+    <div class="cover">
+      <section class="login-content">
+        <div class="login-box">
+          <form class="login-form" action="index.html">
+            <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>LOGIN</h3>
+  
+            <div class="form-group">
+              <label class="control-label"><i class="fas fa-user"></i> Usuario</label>
+              <input class="form-control" type="text" placeholder="Ingrese su cédula" autofocus>
             </div>
-          </div>
-          <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
-          </div>
-        </form>
-        <form class="forget-form" action="index.html">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Forgot Password ?</h3>
-          <div class="form-group">
-            <label class="control-label">EMAIL</label>
-            <input class="form-control" type="text" placeholder="Email">
-          </div>
-          <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block"><i class="fa fa-unlock fa-lg fa-fw"></i>RESET</button>
-          </div>
-          <div class="form-group mt-3">
-            <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Back to Login</a></p>
-          </div>
-        </form>
-      </div>
-    </section>
+            <div class="form-group">
+              <label class="control-label"><i class="fas fa-key"></i> Contraseña</label>
+              <input id="clavea" name="clavea" class="form-control" type="password" placeholder="Contraseña" required>
+
+            </div>
+
+            <div class="form-group row">
+              <label for="" class="col-sm-5 col-form-label"><i class="fas fa-user-tag"></i> Rol</label>
+              <div class="col-sm-12">
+                <select name="rol_idrol" id="rol_idrol"class="form-control"></select>
+              </div>
+            </div>
+
+            <div class="card-footer">
+              <button type="submit" class="btn btn-info float-right">Ingresar</button>
+              <button class="btn btn-outline-info float-left"  OnClick="location.href='registro.php'">Crear Cuenta</button><br>
+            </div>
+          </form>
+          
+        </div>
+      </section>
+    </div>
     <!-- Essential javascripts for application to work-->
     <script src="<?= media(); ?>/js/jquery-3.3.1.min.js"></script>
     <script src="<?= media(); ?>/js/popper.min.js"></script>
     <script src="<?= media(); ?>/js/bootstrap.min.js"></script>
     <script src="<?= media(); ?>/js/main.js"></script>
+    <script src="<?= media(); ?>/js/fontawesome.js"></script>
     <!-- The javascript plugin to display page loading on top-->
     <script src="<?= media(); ?>/js/plugins/pace.min.js"></script>
     <script src="<?= media(); ?>/js/<?= $data['page_functions_js']; ?>"></script>

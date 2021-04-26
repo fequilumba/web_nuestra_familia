@@ -39,3 +39,10 @@
     background: #007bff;
     color: #FFF;
 }
+
+.cover{
+    background-image: url("../images/portada-login.jpg");
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
