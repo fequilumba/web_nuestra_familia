@@ -66,5 +66,13 @@
 			$del = $result->execute();
         	return $del;
 		}
+        //Función para ejecutar consulta retornar un Id
+        function ejecutarConsulta_retornarID(string $query){
+
+            $this->strquery = $query;
+            $result = $this->conexion->query($this->strquery);
+            $id=$result->insert_id;
+            return $id;
+        }
     }
 ?>
