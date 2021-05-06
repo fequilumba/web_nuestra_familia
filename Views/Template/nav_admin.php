@@ -18,28 +18,6 @@
 
         <li class="treeview">
           <a class="app-menu__item" href="#" data-toggle="treeview">
-            <i class="app-menu__icon fa fa-users" aria-hidden="true"></i>
-            <span class="app-menu__label">Usuarios</span>
-            <i class="treeview-indicator fa fa-angle-right"></i>
-          </a>
-
-          <ul class="treeview-menu">
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/usuarios">
-                <i class="icon fa fa-user"></i> Usuarios
-              </a>
-            </li>
-
-            <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/roles">
-                <i class="icon fa fa-male"></i> Roles
-              </a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="treeview">
-          <a class="app-menu__item" href="#" data-toggle="treeview">
             <i class="app-menu__icon fa fa-hospital-o" aria-hidden="true"></i>
             <span class="app-menu__label">Hospital</span>
             <i class="treeview-indicator fa fa-angle-right"></i>
@@ -113,7 +91,7 @@
             </li>
 
             <li>
-              <a class="treeview-item" href="<?= base_url(); ?>/registroEsp">
+              <a class="treeview-item" href="<?= base_url(); ?>/especialidades">
                 <i class="icon fa fa-circle-o"></i> Especialidades
               </a>
             </li>
