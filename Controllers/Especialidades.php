@@ -28,8 +28,8 @@
 				}
 
 				$arrData[$i]['options'] = '<div class="text-center">
-				    <button class="btn btn-primary btn-sm btnEditEspecialidad" rl="'.$arrData[$i]['idespecialidad'].'" title="Editar"><i class="fas fa-pencil-alt"></i></button>
-				    <button class="btn btn-danger btn-sm btnDelEspecialidad" rl="'.$arrData[$i]['idespecialidad'].'" title="Eliminar"><i class="far fa-trash-alt"></i></button>
+				    <button class="btn btn-primary btn-sm btnEditEspecialidad" esp="'.$arrData[$i]['idespecialidad'].'" title="Editar"><i class="fas fa-pencil-alt"></i></button>
+				    <button class="btn btn-danger btn-sm btnDelEspecialidad" esp="'.$arrData[$i]['idespecialidad'].'" title="Eliminar"><i class="far fa-trash-alt"></i></button>
 				</div>';
 			}
 			echo json_encode($arrData,JSON_UNESCAPED_UNICODE);
